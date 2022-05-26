@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px 15px;
+        }
+
+        td#destaque {
+            background-color: yellow;
+        }
+
+        tr.linha{
+            background-color: gray;
+        }
+
+        table#Table02  {
+            width: 300px;
+            height: 300px;
+        }
+
+        table#Table02 td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        thead {
+            background-color: gray;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        tfoot {
+            background-color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabelas</h1>
+    <!--
+        Hierarquia de Tabela:
+        Tabela = tabela
+            Table Row = linha de tabela
+                Table Header = cabeçario de Tabela
+                    Table Data = dado de tabela
+    -->
+
+    <table>
+        <tr class="linha">
+        <td>A1
+        <td>B1
+        <td>C1
+        </tr>
+        <tr><!--Segunda Linha-->
+        <td id="destaque">A1</td>
+        <td>B1</td>
+        <td>C1</td>
+        </tr>
+        <tr class="linha"><!--Terceira Linha-->
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+        </tr>
+        <tr><!--Quarta Linha-->
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+        </tr> 
+    </table>
+    <hr>
+    <table id="Table02">
+        <tr>
+        <td>A1
+        <td>B1
+        <td>C1
+        </tr>
+        <tr><!--Segunda Linha-->
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+        </tr>
+        <tr><!--Terceira Linha-->
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+        </tr>
+        <tr><!--Quarta Linha-->
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+        </tr> 
+    </table>
+    <hr>
+    <!--Tabelas grandes Anatomia-->
+    <!--ANATOMIA:
+    Table
+        THead
+            th
+            tr
+            td
+        TBody
+            th
+            tr
+            td
+        TFoot
+            th
+            tr
+            td
+    -->
+    <table>
+        <thead>
+            <tr>
+                <td>Região</td>
+                <td>População</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7,165 milhões</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td>11,08 milhões</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>6,748 milhões</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>24.993 milhões</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
