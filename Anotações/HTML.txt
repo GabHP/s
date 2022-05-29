@@ -1317,3 +1317,36 @@ então ficaria assim
 </style>
 
 (obs: todas as vezes que pecisa mudar a posição de um objeto voce coloca no style de sua box position: relative;)
+
+Mesclagem de celulas:
+
+nessa parte vamos aprender sobre uma função de organização de tabelas chamada Mesclagem De celulas
+
+bem quando uma tabela n esta completa ela pode ser dividida para ficar completa ou pode complementar um grupo de objetos ex:
+
+-----------/\---------------
+|  LETRA   ||     IDADE    |
+-----------__---------------
+|    G     ||  10  |  200  |
+-----------\/---------------
+
+onde um titulo pode representar dois elementos com essa ferramenta
+
+onde funciona assim:
+
+   <table>
+        <tr>
+            <td colspan="2">A</td>
+            <td rowspan="2">B</td>
+        </tr>
+   </table>
+
+<td colspan="2">A</td> = colspan: estica para o lado onde pode estar faltando um elemento
+
+<td rowspan="2">B</td> = rowspan: estica para baixo onde pode estar faltando um elemento
+
+e esses numeros define o quanto ele esticara
+
+lembrando que ele possue um limite onde e definido pelas quantidade maxima de td's que ouver na tabela
+
+Desafios: crie tres tabelas iguais aos do desafio 13; 
