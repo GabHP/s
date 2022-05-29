@@ -1038,8 +1038,10 @@ e n do seu servidor
 
 e para fazer isso, e recomendavel usar plataformas grandes 
 
-(obs: essa regra se aplica mais em videos do que nos outros, então imagens e 
-audios e mais opicional, pois são mais leves)
+(obs: essa regra se aplica mais em videos 
+do que nos outros, então imagens e 
+audios e mais opicional, pois são mais 
+leves)
 
 e como poderia pegar o local do video
 
@@ -1058,32 +1060,260 @@ Metodo de Exportação:
 
 video:
 
-nos dois e só clicar em compartilhar, dps clique em corporar, e por fim copie o
-codigo que ira aparecer e cole no codigo do site
+nos dois e só clicar em compartilhar, dps 
+clique em corporar, e por fim copie o
+codigo que ira aparecer e cole no codigo do 
+site
 
 Diferenças:
 
 videos:  
 
-YouTube: N são todos os videos que da para exportar, apos o fim do video ele 
-recomenda outros videos, a qualidade de frames e pior que o Vimeo( porem n tem
-muita diferença ), porem seu ponto bom vem do fato de que ele possue uma variedade
+YouTube: N são todos os videos que da para 
+exportar, apos o fim do video ele 
+recomenda outros videos, a qualidade de 
+frames e pior que o Vimeo( porem n tem
+muita diferença ), porem seu ponto bom vem 
+do fato de que ele possue uma variedade
 muito mais ampla
 
-Vimeo: Sua qualidade e melhor, possue configurações avançadas para a incorporação,
-diferente do YouTube, nele n precisa se preocupar com licenças
+Vimeo: Sua qualidade e melhor, possue 
+configurações avançadas para a incorporação,
+diferente do YouTube, nele n precisa se 
+preocupar com licenças
 
 Capitulo 21-Aula 01:
 
-Tabelas: bem essas tabelas são coisas complicadas de se explicar, pois elas
-possuem muitas formas de usalas, ou pelo menos tinha, ja que no HTML4 eles
-usavam as tabelas para organizar os sites, o que hoje em dia e considerado 
-antiproficional ja que assim que são atualizados eles podem bagunçar todo o 
-site, então hoje em dia elas apenas servem para categorizar e organizar dados
+Tabelas: bem essas tabelas são coisas 
+complicadas de se explicar, pois elas
+possuem muitas formas de usalas, ou pelo 
+menos tinha, ja que no HTML4 eles
+usavam as tabelas para organizar os sites, 
+o que hoje em dia e considerado 
+antiproficional ja que assim que são 
+atualizados eles podem bagunçar todo o 
+site, então hoje em dia elas apenas servem 
+para categorizar e organizar dados
 de tal informação
 
-então lembre: n se usa tabelas para organizar conteudo de site
+então lembre: n se usa tabelas para 
+organizar conteudo de site
 
 Aula 02:
+agora que sabemos para q serve uma tabela 
+vamos ver como ela e feita
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+Anatomia de Tabela simples:
+
+        Tabela = tabela;
+            Table Row = linha de tabela;
+                Table Header = cabeçario de 
+                Tabela;
+                    Table Data = dado de 
+                    tabela;
+funcionando assim:
+<table>
+{aqui e onde comesa a tabela}
+     <tr>
+     {aqui ele separa todas as linhasda 
+     tabela}
+          <th>
+          {e uma tag onde vem como um 
+          titulo,
+          funcionando como um td}
+          </th>
+          <td>
+          {dados da tabela, simplificando, 
+          o conteudo dele}
+          </td>
+     </tr>
+</table>
+
+Style das tabelas:
+
+bem essa parte e mais guiada pela logica, 
+tipo vamos
+testar com background
+
+background-color no <table> vai pintar toda 
+a tabela
+
+<style>
+     table {
+          background-color: yellow;
+     }
+</style>
+
+background-color no <tr> pintaria uma linha 
+da tabela
+
+<style>
+     tr {
+          background-color: yellow;
+     }
+</style>
+
+background-color no <th> pintaria o 
+destacado a ser
+um titulo
+
+<style>
+     th {
+          background-color: yellow;
+     }
+</style>
+
+background-color no <td> pintaria os dados 
+da tabela
+
+<style>
+     td {
+          background-color: yellow;
+     }
+</style>
+
+lembrando q para testar melhor e bom 
+dividir a tabela
+em classes ou id's
+
+e tem alguns styles interesantes tipo:
+
+border-collapse: onde decide a colisão das 
+bordas
+(ex: na tabela eu criei bordas nas td's e 
+dai usei
+para grudalas uma a outra com 
+"border-collapse: 
+collapse;")
+
+vertical-align: onde e usado para td's onde 
+define a
+posição da altura do dado(lembrando: que 
+nessa style
+a gente usa middle para coisas que estão em 
+vertical
+"vertical-align: middle;")
+
+Tabelas Grandes:
+
+bem agora vai fazer um pouco mais de 
+sentido essa
+parte, pq a construção dele e diferente:
+
+Anatomia de tabela grandes
+     <table>
+          <thead> = cabeçaro da tabela
+            <tr>
+               <th></th>
+               <td></td>
+            </tr>
+          </thead>
+          <tbody> = corpo da tabela
+            <tr>
+               <th></th>
+               <td></td>
+            </tr>
+          </tbody>
+          <tfoot> = roda-pé da tabela
+            <tr>
+               <th></th>
+               <td></td>
+            </tr>
+          </tfoot>
+
+onde ela e organizada para ter uma
+organização maior 
+tendo como exemplo o index anexado no
+"Ex23-NI-2"
+
+Caption e escopo dos cabeçarios: 
+bem aqui vai ficar mais interesantes porque 
+nos temos dois sistemas diferentes
+
+Cations: seria uma breve explicação do que se tratra a tabela sendo posicionada acima de tudo e dentro do <table>
+
+Escopos: eles são mais interesantes ja que eles predominam qual e o objeto que representa a coluna ou a linha 
+
+ex: <th scope="col">Estados</th>
+
+agora toda vez que colocar um style nele, este style modificara toda a coluna 
+
+e temos o row que, diferente do col ele representa linhas e n colunas 
+
+ex: <th scope="row">Total</th>
+
+agora toda vez que colocar um style nele, este style modificara toda a linha
+
+Efeito Zebrado nas tabelas:
+
+Efeitos zebrados são uma tecnica usada para se localizar nas listas que possuem muitas colunas e elas funcionam assim
+
+com a sub classe :nth-child() {}
+
+onde se usaria assim
+
+     tbody > tr:nth-child(){
+     
+        }
+
+tendo dentro de seus parenteses 3 logicas
+
+ex:
+
+     tbody > tr:nth-child(3n){
+          font-weight: bolder;
+        }
+
+     tbody > tr:nth-child(odd) {
+          background-color: gray;
+        }
+
+     tbody > tr:nth-child(even) {
+          background-color: aquamarine;
+        }
+
+onde usando o :nth-child() voce pode separar em uma logica de sequencia nas linhas ex:
+
+:nth-child(NUMBERn) essa aqui ele pega certo numero de linhas e as divide de acordo com o valor do NUMBER
+
+2n = a segunda linha sera escolhida
+    3n = a terceira linha sera escolhida
+
+podendo ate usar equações como 2n + 10
+
+tbm temos a logica do par e impar:
+
+par = even> todas as linhas que corespondem a um numero par sera escolhido
+
+impar = odd> todas as linhas que corespondem a um numero impar e escolhido
+
+Cabeçalho fixo:
+
+um problema que pode rolar em tabelas grandes e a chance da pessoa que esta lendo ele se esquecer do que cada coluna significa
+
+e para resolver esse problema podemos fixar o cabeçalho e para fazermos isso primeiro:
+
+colocamos a posição do <table> como relativo
+
+e em seguida vamos no style do thead e usamos a modificação chave
+
+position: sticky; = isso fara grudar na parte que for dita abaixo
+
+top: -1px; = onde ele grudara na pagina 
+(obs: esta -1 pois tem uma falha que deixa sepparado por um pixel)
+
+então ficaria assim
+
+<style>
+
+     table {
+          position: relative;
+     }
+
+     thead {
+          position: sticky;
+          top: -1px;
+     }
+</style>
+
+(obs: todas as vezes que pecisa mudar a posição de um objeto voce coloca no style de sua box position: relative;)
