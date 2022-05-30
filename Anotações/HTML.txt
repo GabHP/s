@@ -1350,3 +1350,92 @@ e esses numeros define o quanto ele esticara
 lembrando que ele possue um limite onde e definido pelas quantidade maxima de td's que ouver na tabela
 
 Desafios: crie tres tabelas iguais aos do desafio 13; 
+
+Escopos de Grupo:
+
+aqui vamos esplicar o que seria o rowgroup e o colgroup
+
+eles seriam uma classificação para th's que representam mais de uma coluna ou linha sendo:
+
+colgroup para as colunas
+e rowgroup para as linhas
+
+ex:
+
+--------------/\---------
+|    Group    ||   Col  |
+--------------||---------
+|  td  |  td  ||   td   |
+--------------\/---------  
+
+Desafio parte 2: recrie a tabela correspondente a aula, tendo suas scope's;
+
+Agrupando colunas com colgroup: 
+
+e aqui vamos mostrar uma tag do table que pode controlar as colunas 
+
+estrutura:
+
+<body>
+     <table>
+          <colgroup>
+               <col class="Nomes">
+               <col class="Idade"span="2">
+          </colgroup>
+     </table>
+<body>
+
+onde <colgroup> me permite colocar class para as colunas onde poderia me ajudar a editar elas no <style>
+
+usando a logica de sequencia onde a primeira linha e a primeira coluna da esquerda para direita, e assim se segue
+
+e podemos sclassificar duas coluunas com a mesma classe usando span dentro da tag <col> ex:
+
+coluna com class: <col class="Nomes"> 
+
+coluna com span <col span="2">
+
+onde para finalizar elas podem ser estilizadas no style:
+
+<style>
+
+        col.Nomes {
+            background-color: aqua;
+        }
+
+        col.Idade {
+            background-color: aquamarine;
+        }
+
+</style>
+
+Tabelas responsivas:
+
+bem essa e bem facil
+
+para comesar voce pega a tabela e a envelopa em div e nomeie a div
+
+em seguia crie uma css ou um style e edite essa div com overflow
+
+overflow = traduzido do ingles, transbordar. É uma style onde pega o objeto e coloca um barra de rolagem quando ela n consegue se esticar na janela, ou seja quando a janela e pequena
+
+ex:
+
+body
+     div
+          table
+          /table
+     /div
+/body
+
+/-------------------------------------------------------\
+
+style
+     div {
+          overflow-x: auto; (testar outras opções)
+     }
+/style
+
+para finalizar podemos escolher qual eixo ele mechera o y ou o X
+
+Fim do Modulo 3...
