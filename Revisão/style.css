@@ -2,9 +2,13 @@
 
 * {
     font-size: 1.2em;
-    color: white;
     padding: 0px;
     margin: 0px
+}
+
+p {
+    color: black;
+    font-size: 20px;
 }
 
 body {
@@ -15,10 +19,10 @@ body {
 
 header {
     background-color: black;
-    width: 100vw;
-    height: 7em;
-    position: relative;
-    margin-top: 20px;
+}
+
+header div {
+    display: flex;
 }
 
 header h1 {
@@ -28,9 +32,30 @@ header h1 {
     text-align: center;
     padding-top: 40px
 }
+
+header img {
+    width: 160px;
+}
+
 table {
     width: 100vw;
     font-size: 14px;
     margin-top: 40px;
     background-color: rgba(128, 128, 128, 0.082);
+    color: white;
+}
+
+div#contaner {
+    overflow-x: auto;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    width: 80vw;
+    padding: 1em;
+}
+
+img {
+    width: 100%;
 }
