@@ -18,19 +18,27 @@ body {
 }
 
 header {
+    position: relative;
     background-color: black;
+}
+
+header img {
+    max-width: 2.8em;
 }
 
 header div {
     display: flex;
+    position: relative;
 }
 
 header h1 {
     color: lawngreen;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 1.6em;
     text-align: center;
-    padding-top: 40px
+    padding-left: 2em;
+    padding-top: 1em;
+
 }
 
 header img {
