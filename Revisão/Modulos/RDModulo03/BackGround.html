@@ -6,6 +6,24 @@
     <title>Revisão Completo</title>
     <link rel="stylesheet" href="style3.css">
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+
+    <style>
+        #container {
+            height: 200px;
+            background-color: black;
+            position: relative;
+        }
+
+        #contido {
+            height: 50px;
+            width: 100px;
+            position: absolute;
+            background-color: yellowgreen;
+
+            top: 40%;
+            right: 45%;
+        }
+    </style>
  </head>
  <body>
     <header> 
@@ -75,7 +93,34 @@
 
         background: color url() position position repeat attachment;
         </p>
-        <h2>Terminar a ultima daqui</h2>
+        <h2>organização vertical de caixas</h2>
+        <p>
+            aqui vamos falar sobre organizações onde podemos organizar objetos atravez do style com a tag: position;
+            ex:
+        </p>
+        <h3>codigo</h3>
+        <pre>
+#container {
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+
+#contido {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    background-color: yellowgreen;
+
+    top: 40%;
+    right: 45%;
+}
+        </pre>
+        <h3>resultado</h3>
+        <div id="container">
+            <div id="contido">
+            </div>
+        </div>
     </main>
     <footer>
     </footer>
