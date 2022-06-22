@@ -1439,3 +1439,50 @@ style
 para finalizar podemos escolher qual eixo ele mechera o y ou o X
 
 Fim do Modulo 3...
+
+começo do modulo 04:
+
+aula 01: o inframe pode ser usado?
+
+o que é?
+e uma tag que funciona como um portal, onde mostra atravez de uma janela o site ligado ao iframe 
+
+Anatomia
+
+<iframe src="link" frameborder="0"></iframe>
+
+<iframe> </iframe> = são as tags que fazem isso
+
+src = e onde se colocaria o link
+
+frameborder = aqui conf' o tamanho e a grosura da bordas
+
+obs: alguns sites n permitem esse sistema por direitos de uso
+
+aula 02: Configurando iframe
+
+tem dois geito de configuralos:
+o primeiro e pela tag onde ja sabemos
+e o outro e pelo style
+
+onde e importante lembrar que ele sempre dara importancia para o style
+
+temos algumas outras coisas como por exemplo:
+
+scrolling: onde e uma conf' para a rolagem onde possue 3 opções que são
+
+auto = se precisar tera rolagem
+yes = msm que n precise tera
+no = n tera n importa 
+
+mais tem que lembrar que essa config' n funciona em todos os dispositivos
+
+por exemplo: em todos os disp' so deu certo no linux
+
+e por fim temos os links que estão bloqueados, aos qual citei antes
+
+se ele estiver bloqueado ou corromper podemos colocar um link para o usuario ir nele assim:
+
+<iframe>
+     <a href="link"> </a>
+</iframe>
