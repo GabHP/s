@@ -1486,3 +1486,57 @@ se ele estiver bloqueado ou corromper podemos colocar um link para o usuario ir 
 <iframe>
      <a href="link"> </a>
 </iframe>
+
+aula 03: conteudo local do iframe
+
+nessa aula mostrarei uma utilidade
+
+e ela e simples: voce pode usalo para mostrar tabelas de outros projetos colocando-os
+na mesma pasta e dps colocal a localização atraves do ctrl + space 
+dentro do src
+e tbm tem como colocalo atravez do github pages, colocando o link deles usando o github-pages 
+
+aula 04: Navegação do iframe
+
+nessa aula vamos usar um sistema mt legal do iframe e ele e assim
+
+vc pode usar links localizados no site criado por vc para abrilos no iframe
+como se fosse um navegador separado
+e para fazermos isso primeiro:
+
+criamos um iframe com o style name(coloque um nome para ele)
+
+em seguida coloca um link com a target=(nome do iframe)
+
+<a href="linkAleatorio" target="frame"> linkAleatorio </a>
+
+<iframe name="frame"></iframe>
+
+e por fim retire o src do iframe ou:
+
+aula 05: conteudo do iframe por codigo
+
+podemos fazer um menu para o iframe, que sera ensinada nessa aula
+
+primeiro dentro do iframe criamos o srcdoc onde nos da a liberdade de criar um documento dentro dele
+
+ex:
+
+<iframe srcdoc="<h1>Teste</h1>">
+
+aula 06: Incovenientes do iframe
+
+nessa aula vamos falar pq tem que ter cuidado na hora de usar o iframe
+
+para comesar o bot do google analiza diversas paginas que tem relalção com a busca do usuario e coloca la em cima quem se saiu melhor nas pesquisas e ao msm tempo quem pagou
+
+porem sites que usam muito iframe n conseguem ser recomendados pois o robo n consegue analizar o conteudo dentro do iframe, alem e claro do problema de assecibilidade
+
+pois para quem n sabe pessoas cegas conseguem usar um pc, ataravez de um leitor de tela, o problema e que como o robo n consegue ler o iframe ele tbm n leria para esta pessoa
+
+e temos os problemas de segurança onde se vc colocar no iframe sites que foram rackiados recentemente eles acabam tendo uma porta para seu site
+
+usando estas tecnicas:
+crossite
+xss
+(pesquisar dps)
