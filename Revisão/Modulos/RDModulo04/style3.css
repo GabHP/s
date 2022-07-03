@@ -53,6 +53,7 @@ main {
     margin: auto;
     width: 80vw;
     padding: 1em;
+    position: relative;
 }
 
 ul{
