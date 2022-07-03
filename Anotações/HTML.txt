@@ -1539,4 +1539,35 @@ e temos os problemas de segurança onde se vc colocar no iframe sites que foram 
 usando estas tecnicas:
 crossite
 xss
-(pesquisar dps)
+
+aula 06: mantendo o iframe mais seguro
+
+nessa aula vamos falar sobre metodos para manter o iframe mais seguro:
+
+para comesar vamos falar do snadbox
+
+sandbox: uma ferramenta que pode bloquear elementos do site linkado com o iframe como scripts, formularios, html's, etc...
+
+pode liberar mais de um assim:
+
+sandbox="allow-script allow-form"
+
+podendo tbm bloquear tudo com o  sandbox:
+sandbox="sandbox"
+
+e o outro e a referrerpolicy onde:
+
+referrerpolicy: bloqueia qualquer armazenamento de info dos usuarios, podendo usala assim
+
+referrerpolicy="no-referrer"
+
+anatomia:
+
+<iframe sandbox="allow-OQVcQuiserLiberar"
+referrerpolicy="no-referrer"></iframe> 
+
+aula 07: Dicas do iframe
+
+podemos usar o iframe para videos, mapas e documentos usando o sistema incorporar:
+
+vai no ex24/iframe06.html para ver melhor
